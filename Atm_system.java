@@ -22,6 +22,7 @@ public class Atm_system {
         }
         
     }
+    //Deposit
     public static void Deposit(double amount){
         if(amount <=0){
             System.out.println("Invalid amount");
@@ -36,16 +37,15 @@ public class Atm_system {
         Scanner sc = new Scanner(System.in);
 
         while (true) {
-
+            //Options to Select
             System.out.println("\n===== ATM MENU =====");
             System.out.println("1. Check Balance");
             System.out.println("2. Deposit");
             System.out.println("3. Withdraw");
             System.out.println("4. Exit");
-
+            //Take input and store as Choice
             System.out.print("Enter Choice: ");
             int choice = sc.nextInt();
-
             switch(choice){
                 case 1:
                     CheckBalance();
